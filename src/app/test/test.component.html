@@ -1,3 +1,22 @@
-<p>
-  test works!
-</p>
+<div class="body">
+  <input type="file" (change)="uploadFirstFile($event.target.files)">
+  <input type="file" (change)="uploadSecondFile($event.target.files)">
+
+  <button (click)="testFilesMatching()">Test files</button>
+
+  <button class="reset" type="reset">Reset</button>
+  <br><hr><br>
+
+  <div>
+    <h3>Mode 1 outputs</h3>
+    <pre>{{matchMode1}}</pre>
+  </div>
+
+  <br><hr><br>
+
+  <div>
+    <pre></pre>
+    <h3>Mode 2 outputs</h3>
+    <pre>{{matchMode2}}</pre>
+  </div>
+</div>
