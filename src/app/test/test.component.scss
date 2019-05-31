@@ -1,8 +1,14 @@
-.body{
-  margin: auto;
-  width: 50%;
-  border: 3px solid #113280;
-  padding: 10px;
-  font-size: 18px;
+body{
+  font-size: 20px;
+}
+
+.btn{
+  margin: 10px;
+}
+.form-group input{
+  background-color: #438ce4;
+  cursor: pointer;
+  display: inline-block;
+  color: #050e31;
 }
 

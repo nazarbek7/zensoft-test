@@ -7,8 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestComponent implements OnInit {
 
-  constructor() { }
-
   file1: any;
   file2: any;
   matchMode1: string;
@@ -70,5 +68,4 @@ export class TestComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }

@@ -1,14 +1,16 @@
-<div class="body">
-  <input type="file" (change)="uploadFirstFile($event.target.files)">
-  <input type="file" (change)="uploadSecondFile($event.target.files)">
+<div class="container">
+  <form>
+    <div class="form-group">
+      <input type="file" (change)="uploadFirstFile($event.target.files)" class="btn">
+      <input type="file" (change)="uploadSecondFile($event.target.files)" class="btn">
 
-  <button (click)="testFilesMatching()">Test files</button>
-
-  <button class="reset" type="reset">Reset</button>
-  <br><hr><br>
-
+      <button (click)="testFilesMatching()" type="button" class="btn btn-outline-success">Test files</button>
+      <button class="reset" type="reset" class="btn btn-outline-danger">Reset</button>
+      <br><hr><br>
+    </div>
+  </form>
   <div>
-    <h3>Mode 1 outputs</h3>
+    <h3>Mode 1 outputs:</h3>
     <pre>{{matchMode1}}</pre>
   </div>
 
@@ -16,7 +18,8 @@
 
   <div>
     <pre></pre>
-    <h3>Mode 2 outputs</h3>
+    <h3>Mode 2 outputs:</h3>
     <pre>{{matchMode2}}</pre>
   </div>
 </div>
+
